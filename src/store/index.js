@@ -5,50 +5,9 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-export const contact = {
-  id: "",
-  fields: {
-    label: {
-      type: "",
-      data: "",
-    },
-  },
-};
-
-const MOCK_DATA = [
-  {
-    id: 1,
-    fields: [
-      { label: "Имя", type: "text", data: "Igor" },
-      { label: "Номер телефона", type: "tel", data: "+7 981 987 8730" },
-    ],
-  },
-  {
-    id: 2,
-    fields: [
-      { label: "Имя", type: "text", data: "Igor 2" },
-      { label: "Номер телефона", type: "tel", data: "+7 981 987 8730" },
-    ],
-  },
-  {
-    id: 3,
-    fields: [
-      { label: "Имя", type: "text", data: "Igor 3" },
-      { label: "Номер телефона", type: "tel", data: "+7 981 987 8730" },
-    ],
-  },
-  {
-    id: 4,
-    fields: [
-      { label: "Имя", type: "text", data: "Igor 4" },
-      { label: "Номер телефона", type: "tel", data: "+7 981 987 8730" },
-    ],
-  },
-];
-
 export default new Vuex.Store({
   state: {
-    contactList: MOCK_DATA,
+    contactList: [],
     fieldTypes: [],
   },
   getters: {
